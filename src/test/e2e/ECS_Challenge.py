@@ -26,7 +26,7 @@ def extractRowsFromPage(browser, tag):
 
 def checkIndex(listOfRows):
     result = []
-    found = False #testing for a positive condition so default is false (initial state)
+    found = False
 
     for row in listOfRows:
         for index, column in enumerate(row):
@@ -42,12 +42,11 @@ def checkIndex(listOfRows):
 
     return result
 
-# sum - helper function
-# Sums up the items in a list
+
 def sum(listOfValues):
     sum = 0
     for item in listOfValues:
-        sum += int(item) #add the item to the current sum
+        sum += int(item)
 
     return sum
 
